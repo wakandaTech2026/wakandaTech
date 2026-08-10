@@ -1,0 +1,1 @@
+eu quero um código pra detectar apenas a esfera
