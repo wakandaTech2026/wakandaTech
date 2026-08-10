@@ -1,10 +1,12 @@
 int sEM = 8;  //sensor Esquerda
 int sE = 9;
+int sC = 10;
 int sD = 11;
 int sDM = 12; //sensor direita*/
 
 int eSEM;
 int eSE;
+int eSC;
 int eSD;
 int eSDM;
 
@@ -21,7 +23,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   eSEM = digitalRead(sEM);  //lê o estado do sensor (alto = inativo, baixo = ativo)
-  eSE = digitalRead(sE);  //lê o estado do sensor (alto = inativo, baixo = ativo)
+  eSE = digitalRead(sE);
+  eSC = digitalRead(sC);   //lê o estado do sensor (alto = inativo, baixo = ativo)
   eSD = digitalRead(sD);
   eSDM = digitalRead(sDM);
   Serial.print(eSEM);
