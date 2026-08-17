@@ -1,13 +1,13 @@
-int portaMotor = 2;
-int portaMotor1 = 3;
-int portaMotor2 = 4;
-int portaMotor3 = 5;
+int portaMotor = 8;
+int portaMotor1 = 9;
+int portaMotor2 = 10;
+int portaMotor3 = 11;
 
-int sEM = 8;  //sensor Esquerda
-int sE = 9;
-int sC = 10;
-int sD = 11;
-int sDM = 12; //sensor direita*/
+int sEM = 24;  //sensor Esquerda
+int sE = 26;
+int sC = 28;
+int sD = 30;
+int sDM = 32; //sensor direita*/
 
 int eSEM;
 int eSE;
@@ -44,7 +44,7 @@ void setup() {
 }
  
 void loop() {
-
+/*
   //motor e sensor de distancia
   digitalWrite(trigPin, LOW);
   delayMicroseconds(5);
@@ -94,7 +94,7 @@ void loop() {
   else if (eSE == 0) {
     erro = -1;
   }
-  else if (eC == 0) {
+  else if (eSC == 0) {
     erro = 0;
   }
   else if (eSD == 0) {
