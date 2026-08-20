@@ -1,7 +1,7 @@
-int portaMotor = 2;
-int portaMotor1 = 3;
-int portaMotor2 = 4;
-int portaMotor3 = 5;
+int portaMotor = 8;
+int portaMotor1 = 9;
+int portaMotor2 = 10;
+int portaMotor3 = 11;
 
 void setup() {
   // put your setup code here, to run once:
